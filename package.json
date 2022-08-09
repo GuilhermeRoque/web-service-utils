@@ -1,0 +1,19 @@
+{
+  "name": "web-service-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeRoque/web-service-utils.git"
+  },
+  "author": "Guilherme Roque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeRoque/web-service-utils/issues"
+  },
+  "homepage": "https://github.com/GuilhermeRoque/web-service-utils#readme"
+}
