@@ -10,6 +10,5 @@ const getToken = (req) => {
 
 
 module.exports = {
-    HttpStatusCodes: HttpStatusCodes,
     getToken: getToken
 }

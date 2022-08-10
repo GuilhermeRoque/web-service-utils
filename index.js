@@ -1,8 +1,8 @@
-const enums = require('./utils/enums')
-const ServiceBase = require('./utils/serviceBase')
-const serviceErrors = require('./utils/serviceErrors')
-const createKeys = require('./utils/createKeys')
-const controller = require('./utils/controller')
+const enums = require('./enums')
+const ServiceBase = require('./serviceBase')
+const serviceErrors = require('./serviceErrors')
+const createKeys = require('./createKeys')
+const controller = require('./controller')
 
 module.exports = {
     enums: enums,

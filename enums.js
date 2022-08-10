@@ -29,6 +29,6 @@ const HttpStatusCodes = {
 
 module.exports = {
     MemberRoleEnum: MemberRoleEnum,
-    MemberStatusEnum: MemberStatusEnum.ACTIVE,
+    MemberStatusEnum: MemberStatusEnum,
     HttpStatusCodes: HttpStatusCodes
 }
