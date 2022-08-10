@@ -1,4 +1,4 @@
-const {HttpStatusCodes} = require('./controller')
+const {HttpStatusCodes} = require('./enums')
 
 class ServiceError extends Error {
     constructor(httpStatusCode, message, value){
