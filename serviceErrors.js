@@ -8,7 +8,18 @@ class ServiceError extends Error {
         this.value = value
     }
 }
-
+class TypeError extends ServiceError{
+    constructor(error){
+        const message = "Type error"
+        const value = {
+            field: error.path,
+            value: error.value,
+            type: error.kind
+        }
+        const httpStatusCode = HttpStatusCodes.BAD_REQUEST
+        super(httpStatusCode, message, value)
+    }
+}
 class ValidationError extends ServiceError {
     constructor(error){
         const message = "Validation failed"
@@ -101,6 +112,7 @@ module.exports = {
     RoleError,
     FailedSanityCheckError,
     UnexpectedError,
-    UnauthorizedError
+    UnauthorizedError,
+    TypeError
 
 }

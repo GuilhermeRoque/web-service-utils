@@ -88,10 +88,15 @@ class ServiceBase{
         return error instanceof MongoServerError && error.code === MongoErrorCodes.DUPLCIATE
     }
 
+    is_cast_error(error){
+        return error instanceof mongooseErrors.CastError
+    }
+
     getServiceError(error){
         console.log("Original error:", error)
         if(this.is_validation_error(error)) return new ValidationError(error)
         if(this.is_duplicated_error(error)) return new DuplicatedError(error)
+        if(this.is_cast_error(error)) return new TypeError(error)
         return error
     }
 
