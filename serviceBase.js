@@ -1,4 +1,4 @@
-const {NotFoundError, DuplicatedError, ValidationError} = require('./serviceErrors')
+const {NotFoundError, DuplicatedError, ValidationError, TypeError} = require('./serviceErrors')
 const mongoose = require("mongoose")
 const mongooseErrors = mongoose.Error
 const mongodb = require("mongodb")
